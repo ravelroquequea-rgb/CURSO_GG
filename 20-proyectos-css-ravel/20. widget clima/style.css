@@ -1,0 +1,146 @@
+/* Proyecto 20: widget del clima */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* tamaño del icono */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* compatibilidad con navegadores WebKit */
+  -webkit-font-smoothing: antialiased;
+  /* compatibilidad con Safari y Chrome */
+  text-rendering: optimizeLegibility;
+
+  /* compatibilidad con Firefox */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* compatibilidad con IE */
+  font-feature-settings: "liga";
+}
+.weather-container {
+  color: white;
+  font-size: 18px;
+  width: 450px;
+  margin: 100px auto;
+  background-color: #1f2937;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+/* tarjeta de arriba con el clima de ahora */
+.weather-container .current {
+  background: rgb(15, 118, 110);
+  background: linear-gradient(
+    0deg,
+    rgba(15, 118, 110, 1) 0%,
+    rgba(13, 148, 136, 1) 42%,
+    rgba(45, 212, 191, 1) 100%
+  );
+  border-radius: 40px;
+  padding: 40px;
+}
+.weather-container .current .city {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.weather-container .current .day {
+  text-align: center;
+}
+
+.weather-container .current .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-container .current .row .icon img {
+}
+.weather-container .current .row .info {
+}
+.weather-container .current .row .info .temperature {
+  font-size: 48px;
+  font-weight: bold;
+}
+.weather-container .current .row .info .temperature .temperature-now {
+  font-size: 80px;
+  margin: 0;
+}
+.weather-container .current .row .info .temperature .temperature-low {
+  margin-left: -15px;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .row .info .status {
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .more {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 10px;
+  text-align: center;
+}
+
+.weather-container .current .more .item {
+}
+.weather-container .current .more .item .icon span {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.weather-container .current .more .item .text {
+  font-weight: bold;
+}
+.weather-container .current .more .item .text .value {
+}
+.weather-container .current .more .item .text .type {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* lista de los próximos días */
+.weather-container .list {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather-container .list .day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-container .list .day .name {
+  width: 123.3px;
+  font-weight: bold;
+}
+.weather-container .list .day .weather {
+  width: 123px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.weather-container .list .day .weather .icon {
+}
+.weather-container .list .day .weather .status {
+}
+.weather-container .list .day .temperature {
+  width: 123px;
+  text-align: right;
+}
+.weather-container .list .day .temperature .temperature-high {
+}
+.weather-container .list .day .temperature .temperature-low {
+  color: rgba(255, 255, 255, 0.7);
+}
