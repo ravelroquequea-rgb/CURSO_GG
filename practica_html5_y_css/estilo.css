@@ -1,0 +1,177 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #f3f4f6; color: #333; }
+img { max-width: 100%; }
+a { text-decoration: none; }
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 40px;
+    background-color: #111827;
+    border-bottom: 4px solid #facc15;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo-icono {
+    background-color: #facc15;
+    color: #111827;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+.menu a { color: white; padding: 8px 16px; border-radius: 20px; }
+.menu a:hover { background-color: #facc15; color: #111827; }
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 60px 40px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.banner-texto { width: 480px; max-width: 100%; }
+.banner-imagen img { width: 420px; }
+
+.etiqueta {
+    display: inline-block;
+    background-color: #374151;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.banner-texto h1 { font-size: 42px; margin-bottom: 15px; color: #facc15; }
+.banner-texto p { font-size: 18px; line-height: 1.5; margin-bottom: 25px; }
+
+.boton, .boton-borde {
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 28px;
+    border-radius: 25px;
+    margin: 0 10px 10px 0;
+}
+
+.boton { background-color: #facc15; color: #111827; }
+.boton-borde { border: 2px solid #9ca3af; color: white; }
+.seccion { padding: 50px 40px; }
+.fondo-celeste { background-color: #e5e7eb; }
+.seccion h2 { text-align: center; font-size: 32px; color: #111827; }
+.subtitulo { text-align: center; color: #6b7280; margin: 8px 0 30px; }
+
+.catalogo, .beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    --color: #374151;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: 8px solid var(--color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.tarjeta:hover { transform: translateY(-8px); }
+
+.categoria {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--color);
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    margin: 20px 0 15px;
+}
+
+.tarjeta h3 { margin-bottom: 10px; color: #111827; }
+.datos { list-style: none; line-height: 1.6; }
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+    color: var(--color);
+}
+
+.boton-tarjeta {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color);
+}
+
+.morado  { --color: #111827; }
+.rosa    { --color: #374151; }
+.naranja { --color: #4b5563; }
+.celeste { --color: #0f766e; }
+
+.beneficio {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.icono { display: block; font-size: 40px; }
+.beneficio h3 { font-size: 22px; margin: 10px 0; }
+.fondo-rosa { background-color: #374151; }
+.fondo-naranja { background-color: #1f2937; }
+.fondo-morado { background-color: #4b5563; }
+
+.pie {
+    background-color: #111827;
+    color: white;
+    padding: 40px;
+    border-top: 4px solid #facc15;
+    line-height: 1.8;
+}
+
+.pie-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.pie h3 { color: #facc15; }
+.pie a { color: #d1d5db; }
+.pie a:hover { color: white; }
+.derechos { text-align: center; font-size: 14px; color: #9ca3af; }
