@@ -24,35 +24,49 @@ h2 {
     box-shadow: 0 3px 10px #00000015;
 }
 
-/* Estilos de las cajas */
-.caja {
+
+.caja1 {
     width: 150px;
     height: 50px;
-    background-color: #2563eb;
+    background-color: #3a3c41;
     color: white;
     font-size: 24px;
     font-weight: bold;
     display: flex;
+   order: 1;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     margin: 5px;
 }
 
-/* EJEMPLO 1: SIN FLEXBOX */
-.contenedor-normal {
-    background-color: #e2e8f0;
-    height: 200px;
-    padding: 15px;
-    border: 2px dashed #64748b;
+.caja2 {
+    width: 150px;
+    height: 50px;
+    background-color: #86888d;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
 }
 
-/* EJEMPLO 2: CON FLEXBOX */
-.contenedor-flex {
+.caja3 {
+    width: 150px;
+    height: 50px;
+    background-color: #626877;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
     display: flex;
-    align-items: first baseline;
-    background-color: #dbeafe;
-    height: 200px;
-    padding: 15px;
-    border: 2px dashed #2563eb;
+    order: 3;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 5px;
 }
+
