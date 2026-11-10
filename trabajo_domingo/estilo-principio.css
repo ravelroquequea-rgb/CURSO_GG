@@ -1,0 +1,134 @@
+:root {
+  --azul-oscuro: #050a3a;
+  --azul-boton: #2563eb;
+  --fondo-claro: #f3f7ff;
+  --texto-gris: #5b6478;
+  --blanco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--fondo-claro);
+  color: var(--azul-oscuro);
+}
+
+.seccion-servicios {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding-top: 60px;
+  text-align: center;
+  background-color: var(--fondo-claro);
+}
+
+.etiqueta {
+  color: var(--azul-boton);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.titulo {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.titulo strong {
+  font-weight: 800;
+}
+
+.descripcion {
+  max-width: 520px;
+  margin: 0 auto 40px auto;
+  color: var(--texto-gris);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.zona-tarjetas {
+  padding: 0 30px 60px 30px;
+  background: linear-gradient(
+    to bottom,
+    var(--fondo-claro) 0%,
+    var(--fondo-claro) 45%,
+    var(--azul-oscuro) 45%,
+    var(--azul-oscuro) 100%
+  );
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 280px;
+  padding: 28px 24px;
+  text-align: left;
+  background-color: var(--blanco);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(5, 10, 58, 0.15);
+}
+
+.icono {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.tarjeta h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  color: var(--texto-gris);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.tarjeta a {
+  color: var(--azul-boton);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tarjeta a:hover {
+  text-decoration: underline;
+}
+
+.boton-cris {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 12px 36px;
+  background-color: var(--azul-boton);
+  color: var(--blanco);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 0 18px rgba(37, 99, 235, 0.7);
+}
+
+.boton-cris:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .titulo {
+    font-size: 28px;
+  }
+  .tarjeta {
+    width: 100%;
+  }
+}
