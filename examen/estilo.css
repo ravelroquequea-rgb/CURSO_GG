@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef2f7;
+}
+
+.contenedor {
+    display: flex;
+}
+
+
+.opciones {
+    width: 220px;
+    min-height: 100vh;
+    background: #033ff5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+.secundario,
+.activar {
+    padding: 14px;
+    border-radius: 12px;
+    background: #232f54;
+}
+
+.secundario {
+    background: #232f54;
+}
+
+.derecha {
+    flex: 1;
+    padding: 20px;
+}
+
+.encabezado {
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tarjetas {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.tarjeta {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-left: 4px solid;
+}
+
+.tarjeta p {
+    font-size: 28px;
+}
+
+.azul {
+    border-color: #2563eb;
+}
+
+.verde {
+    border-color: #16a34a;
+}
+
+.naranja {
+    border-color: #f97316;
+}
+
+.rojo {
+    border-color: #dc2626;
+}
+
+.morado {
+    border-color: #581c87;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #1a3673;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.verde-e {
+    background: #d1fae5;
+}
+
+.naranja-e {
+    background: #fef3c7;
+}
+
+.rojo-e {
+    background: #fee2e2;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}

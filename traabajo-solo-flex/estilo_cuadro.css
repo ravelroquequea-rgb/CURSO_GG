@@ -1,0 +1,41 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfdfdf;
+    padding: 20px;
+}
+
+
+.tabla {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;  
+    border-collapse: collapse; 
+    background-color: white;
+}
+
+
+.tabla th {
+    background-color: #1a3673; 
+    color: white;
+    padding: 12px;
+    text-align: left; 
+}
+
+.tabla td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; 
+    color: #333;
+}
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 15px; 
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.verde { background-color: #d1fae5; color: #065f46; }
+.naranja { background-color: #fef3c7; color: #92400e; }
+.rojo { background-color: #fee2e2; color: #991b1b; }
